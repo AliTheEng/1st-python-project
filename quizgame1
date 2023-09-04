@@ -1,0 +1,43 @@
+print('welcome to the quiz')
+playing = input('Do you want to play? ')
+score = 0
+
+if playing.lower() != 'yes':
+    quit()
+    
+else:
+    print('ok lets play :) ')
+
+answer = input('which team has the most ucl trophies? ')
+if answer.lower() == 'real madrid':
+    print('Correct!')
+    score += 1
+else:
+    print('Incorrect!')
+
+answer = input('2022 worldcup champion? ')
+if answer.lower() == 'argentina':
+    print('Correct!')
+    score += 1
+
+else:
+    print('Incorrect!')
+
+answer = input('2022 Ballon d"or winner? ')
+if answer.lower() == 'karim benzema':
+    print('Correct!')
+    score += 1
+
+else:
+    print('Incorrect!')
+
+
+answer = input('ronaldo"s club in 2023 ? ')
+if answer.lower() == 'alnasr':
+    print('Correct!')
+    score += 1
+
+else:
+    print('Incorrect!')
+
+print(f'you got {(score/4) * 100} %')
